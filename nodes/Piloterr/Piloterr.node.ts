@@ -49,7 +49,8 @@ export class Piloterr implements INodeType {
 					{
 						name: 'Linkedin',
 						value: 'linkedin',
-						description: 'Get in-depth information on LinkedIn professionals, posts, companies, jobs',
+						description:
+							'Get in-depth information on LinkedIn professionals, posts, companies, jobs',
 					},
 				],
 				default: 'enrichment',
