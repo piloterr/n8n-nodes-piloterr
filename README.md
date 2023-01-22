@@ -1,4 +1,4 @@
-# n8n-nodes-_node-name_
+# n8n-nodes-piloterr
 
 This is an n8n community node. It lets you use Piloterr in your n8n workflows.
 
