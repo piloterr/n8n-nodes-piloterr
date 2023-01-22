@@ -1,18 +1,31 @@
 # n8n-nodes-_node-name_
 
-This is an n8n community node. It lets you use _app/service name_ in your n8n workflows.
+This is an n8n community node. It lets you use Piloterr in your n8n workflows.
 
-_App/service name_ is _one or two sentences describing the service this node integrates with_.
+Piloterr API handles crawlers and rotates proxies for you.
 
 [n8n](https://n8n.io/) is a [fair-code licensed](https://docs.n8n.io/reference/license/) workflow automation platform.
 
 [Installation](#installation)  
 [Operations](#operations)  
-[Credentials](#credentials)  <!-- delete if no auth needed -->  
+[Credentials](#credentials)
 [Compatibility](#compatibility)  
-[Usage](#usage)  <!-- delete if not using this section -->  
+[Usage](#usage) 
 [Resources](#resources)  
-[Version history](#version-history)  <!-- delete if not using this section -->  
+[Version history](#version-history)
+
+# Highlights
+- [x] Company Database
+- [x] Company Email Pattern
+- [x] LinkedIn Company Info
+- [x] LinkedIn Company Employee Count
+- [x] LinkedIn Company Employee Info
+- [x] LinkedIn Job Search
+- [x] LinkedIn Job Info
+- [ ] Instagram User Info
+- [ ] Instagram Post
+- [ ] Facebook Page Info
+
 
 ## Installation
 
@@ -24,11 +37,12 @@ _List the operations supported by your node._
 
 ## Credentials
 
-_If users need to authenticate with the app/service, provide details here. You should include prerequisites (such as signing up with the service), available authentication methods, and how to set them up._
+This node require a token API in order to connect to your Piloterr account. You can get your token API from the [Piloterr](https://piloterr.com/login) website.
+[![credentials](assets/credentials.png)](assets/credentials.png)
 
 ## Compatibility
 
-_State the minimum n8n version, as well as which versions you test against. You can also include any known version incompatibility issues._
+I develop the node on n8n@0.211.0. I don't have the change to test on other versions yet.
 
 ## Usage
 
@@ -39,10 +53,11 @@ _By the time users are looking for community nodes, they probably already know n
 ## Resources
 
 * [n8n community nodes documentation](https://docs.n8n.io/integrations/community-nodes/)
-* _Link to app/service documentation._
+* [Piloterr website](https://piloterr.com/)
+* [Piloterr pricing](https://piloterr.com/pricing)
+* [Piloterr documentation](https://piloterr.com/docs)
+* [Piloterr API documentation](https://piloterr.readme.io)
 
 ## Version history
 
-_This is another optional section. If your node has multiple versions, include a short description of available versions and what changed, as well as any compatibility impact._
-
-
+- `0.0.1` - Initial release

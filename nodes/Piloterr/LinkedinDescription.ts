@@ -16,31 +16,31 @@ export const linkedinOperations: INodeProperties[] = [
 				name: 'Company Employee Count',
 				value: 'company employee count',
 				description: 'Count employee of a company',
-				action: 'Enrich a linkedin company',
+				action: 'Company employee count',
 			},
 			{
 				name: 'Company Employee Info',
 				value: 'company employee info',
 				description: 'Look up employee of a company',
-				action: 'Enrich a linkedin company',
+				action: 'Company employee info',
 			},
 			{
 				name: 'Company Info',
 				value: 'company info',
 				description: 'Look up a linkedin company',
-				action: 'Enrich a linkedin company',
+				action: 'Company info',
 			},
 			{
-				name: 'Company Job Info',
+				name: 'Job Info',
 				value: 'job info',
 				description: 'Get a job info',
-				action: 'Enrich a linkedin company',
+				action: 'Job info',
 			},
 			{
-				name: 'Company Job Seach',
+				name: 'Job Seach',
 				value: 'job search',
 				description: 'Search jobs of a linkedin company',
-				action: 'Enrich a linkedin company',
+				action: 'Job seach',
 			},
 		],
 		default: 'company info',
@@ -61,17 +61,33 @@ export const linkedinFields: INodeProperties[] = [
 		displayOptions: {
 			show: {
 				resource: ['linkedin'],
-				operation: ['company info', 'company employee info', 'company employee count'],
+				operation: ['company info', 'company employee info'],
 			},
 		},
 		description:
-			'Linkedin company to look up. Format `tesla-motors` or `15564` or `linkedin.com/company/tesla-motors`.',
+			'Linkedin company to look up. Format `tesla-motors` or `1337` or `linkedin.com/company/tesla-motors`.',
+	},
+	{
+		displayName: 'Query',
+		name: 'query',
+		type: 'string',
+		default: '',
+		placeholder: '1337',
+		required: true,
+		displayOptions: {
+			show: {
+				resource: ['linkedin'],
+				operation: ['company employee count'],
+			},
+		},
+		description:
+			'Linkedin company to look up. Format or `1337`.',
 	},
 	{
 		displayName: 'Status',
 		name: 'status',
 		type: 'string',
-		default: '',
+		default: 'current',
 		placeholder: 'past',
 		required: true,
 		displayOptions: {
@@ -99,7 +115,7 @@ export const linkedinFields: INodeProperties[] = [
 				operation: ['job search'],
 			},
 		},
-		description: 'Linkedin company to look up. Format `15564` or `linkedin.com/company/33246798`.',
+		description: 'Linkedin company to look up. Format `1337` or `linkedin.com/company/33246798`.',
 	},
 	{
 		displayName: 'Query',

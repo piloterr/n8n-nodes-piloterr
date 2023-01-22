@@ -119,7 +119,7 @@ export class Piloterr implements INodeType {
 							qs,
 						);
 					} else if (operation === 'job search') {
-						const page = this.getNodeParameter('page', i) as string;
+						const page = this.getNodeParameter('page', i) as number;
 						responseData = await piloterrApiRequest.call(
 							this,
 							'GET',

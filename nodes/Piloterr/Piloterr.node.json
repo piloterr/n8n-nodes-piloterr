@@ -1,6 +1,6 @@
 {
-	"node": "n8n-nodes-base.Piloterr",
-	"nodeVersion": "1.0",
+	"node": "n8n-nodes-base.piloterr",
+	"nodeVersion": "0.1.9",
 	"codexVersion": "1.0",
 	"categories": ["Sales"],
 	"resources": {
@@ -11,7 +11,7 @@
 		],
 		"primaryDocumentation": [
 			{
-				"url": "https://docs.n8n.io/nodes/n8n-nodes-base.piloterr"
+				"url": "https://docs.n8n.io/integrations/builtin/app-nodes/n8n-nodes-base.piloterr/"
 			}
 		]
 	}

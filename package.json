@@ -1,9 +1,11 @@
 {
   "name": "n8n-nodes-piloterr",
-  "version": "0.1.0",
+  "version": "0.1.9",
   "description": "n8n node to call Piloterr to handles crawlers and rotates proxies for you.",
   "keywords": [
-    "n8n-community-node-package"
+    "n8n-community-node-package",
+    "n8n-node",
+    "n8n-nodes-piloterr"
   ],
   "license": "MIT",
   "homepage": "",
