@@ -25,7 +25,7 @@ Piloterr API handles crawlers and rotates proxies for you.
 - [ ] Instagram User Info
 - [ ] Instagram Post
 - [ ] Facebook Page Info
-
+- [ ] Facebook Post
 
 ## Installation
 
